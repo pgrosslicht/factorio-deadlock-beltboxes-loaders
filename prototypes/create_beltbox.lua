@@ -13,8 +13,8 @@ local function create_beltbox_entity(tier_table)
 		name = tier_table.beltbox,
 		localised_description = {"entity-description.deadlock-beltbox"},
 		icons = {
-			{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-base.png" },
-			{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-mask.png", tint = tier_table.colour },
+			{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-base.png" },
+			{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-mask.png", tint = tier_table.colour },
 		},
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -23,7 +23,7 @@ local function create_beltbox_entity(tier_table)
 			layers = {
 				{
 					hr_version = {
-						filename = "__deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-base.png",
+						filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-base.png",
 						animation_speed = 1 / crafting_speed,
 						priority = "high",
 						frame_count = 60,
@@ -33,7 +33,7 @@ local function create_beltbox_entity(tier_table)
 						shift = {0, 0},
 						width = 96
 					},
-					filename = "__deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-base.png",
+					filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-base.png",
 					animation_speed = 1 / crafting_speed,
 					priority = "high",
 					frame_count = 60,
@@ -45,7 +45,7 @@ local function create_beltbox_entity(tier_table)
 				},
 				{
 					hr_version = {
-						filename = "__deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-mask.png",
+						filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-mask.png",
 						animation_speed = 1 / crafting_speed,
 						priority = "high",
 						repeat_count = 60,
@@ -55,7 +55,7 @@ local function create_beltbox_entity(tier_table)
 						width = 96,
 						tint = tier_table.colour,
 					},
-					filename = "__deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-mask.png",
+					filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-mask.png",
 					animation_speed = 1 / crafting_speed,
 					priority = "high",
 					repeat_count = 60,
@@ -68,7 +68,7 @@ local function create_beltbox_entity(tier_table)
 				{
 					hr_version = {
 						draw_as_shadow = true,
-						filename = "__deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-shadow.png",
+						filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-shadow.png",
 						animation_speed = 1 / crafting_speed,
 						frame_count = 60,
 						line_length = 10,
@@ -78,7 +78,7 @@ local function create_beltbox_entity(tier_table)
 						width = 144
 					},
 					draw_as_shadow = true,
-					filename = "__deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-shadow.png",
+					filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-shadow.png",
 					animation_speed = 1 / crafting_speed,
 					frame_count = 60,
 					line_length = 10,
@@ -95,7 +95,7 @@ local function create_beltbox_entity(tier_table)
 					hr_version = {
 						animation_speed = 1 / crafting_speed,
 						blend_mode = "additive",
-						filename = "__deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-working.png",
+						filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/high/beltbox-working.png",
 						frame_count = 30,
 						line_length = 10,
 						height = 96,
@@ -106,7 +106,7 @@ local function create_beltbox_entity(tier_table)
 					},
 					animation_speed = 1 / crafting_speed,
 					blend_mode = "additive",
-					filename = "__deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-working.png",
+					filename = "__pdg-deadlock-beltboxes-loaders__/graphics/entities/low/beltbox-working.png",
 					frame_count = 30,
 					line_length = 10,
 					height = 48,
@@ -158,7 +158,7 @@ local function create_beltbox_entity(tier_table)
 				volume = 0.6
 			},
 			sound = {
-				filename = "__deadlock-beltboxes-loaders__/sounds/fan.ogg",
+				filename = "__pdg-deadlock-beltboxes-loaders__/sounds/fan.ogg",
 				volume = 1.0
 			},
 			max_sounds_per_type = 3,
@@ -179,8 +179,8 @@ local function create_beltbox_item(tier_table)
 		name = tier_table.beltbox_item or tier_table.beltbox,
 		localised_description = {"entity-description.deadlock-beltbox"},
 		icons = {
-			{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-base.png" },
-			{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-mask.png", tint = tier_table.colour },
+			{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-base.png" },
+			{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/mipmaps/beltbox-icon-mask.png", tint = tier_table.colour },
 		},
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -223,8 +223,8 @@ local function create_beltbox_technology(tier_table)
 		}
 	}
 	tech.icons = {
-		{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/square/beltbox-icon-base-128.png", icon_size = 128 },  -- 1.1 appears to be defaulting to 256
-		{ icon = "__deadlock-beltboxes-loaders__/graphics/icons/square/beltbox-icon-mask-128.png", icon_size = 128, tint = tier_table.colour },  -- 1.1 appears to be defaulting to 256
+		{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/square/beltbox-icon-base-128.png", icon_size = 128 },  -- 1.1 appears to be defaulting to 256
+		{ icon = "__pdg-deadlock-beltboxes-loaders__/graphics/icons/square/beltbox-icon-mask-128.png", icon_size = 128, tint = tier_table.colour },  -- 1.1 appears to be defaulting to 256
 	}
 	tech.name = tier_table.beltbox_technology
 	tech.unit.count = tech.unit.count * 1.5
